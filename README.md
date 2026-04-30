@@ -74,34 +74,6 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Windows 10/11
-- Visual Studio 2022 (or later)
-- .NET 8 SDK
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/UNO-Card-Game.git
-```
-
-2. Open `FINALPROJ_UNO.sln` in Visual Studio
-
-3. Restore NuGet packages (Tools → NuGet Package Manager → Restore)
-
-4. Build the solution (Ctrl + Shift + B)
-
-5. Run the application (F5)
-
-### First Time Setup
-
-The database will be created automatically when you first run the application. SQL Server LocalDB comes with Visual Studio — no additional setup required.
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -200,7 +172,8 @@ This project was created for educational purposes as a final project for CPE-262
 
 *(Add screenshots here)*
 
-- Main Menu
+- Main Menu <img width="692" height="732" alt="image" src="https://github.com/user-attachments/assets/8b616b41-8d98-4a14-ad0b-6c5b46e99607" />
+
 - Lobby / Player Setup
 - Game Board
 - Leaderboard
@@ -214,11 +187,3 @@ This project was created for educational purposes as a final project for CPE-262
 
 ---
 
-## 📝 Notes for You:
-
-| Replace | With |
-|---------|------|
-| `yourusername` | Your actual GitHub username |
-| Screenshot placeholders | Actual images (optional) |
-
-Save this as `README.md` in your project's root folder, then commit and push to GitHub.
