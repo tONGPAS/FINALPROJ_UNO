@@ -64,7 +64,7 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 | Technology | Purpose |
 |------------|---------|
-| C# .NET 8 | Programming language |
+| C# .NET 10 | Programming language |
 | Windows Forms | UI framework |
 | GDI+ | Custom graphics rendering |
 | SQL Server LocalDB | Database |
