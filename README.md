@@ -157,8 +157,8 @@ FINALPROJ_UNO/
 
 **Nicoh Barachiel A. Comendador**
 
-- Course: CPE-262
-- Date: May 2026
+- Course: CPE-262-H3
+- Date: April 2026
 
 ---
 
@@ -168,22 +168,23 @@ This project was created for educational purposes as a final project for CPE-262
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots here)*
+## 📸 Game Screenshots
 
 - Main Menu <img width="692" height="732" alt="image" src="https://github.com/user-attachments/assets/8b616b41-8d98-4a14-ad0b-6c5b46e99607" />
 
-- Lobby / Player Setup
-- Game Board
-- Leaderboard
-- Player Profile with Charts
-- Match History
-- Avatar Picker
+- Lobby / Player Setup <img width="694" height="597" alt="image" src="https://github.com/user-attachments/assets/bcfbc78a-6591-4b5b-8b16-22229b158384" />
+
+- Game Board <img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/856a613d-5473-4726-9e3e-7a576ffe782f" />
+
+- Leaderboard <img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/d237f407-ac63-40f3-89c5-4b065a6ded05" />
+
+- Player Profile with Charts <img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/cd8807b4-394e-4351-bcf2-986126d0d2d8" />
+
+- Match History <img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/bb7ceb03-664e-40d8-99ed-2941679c0408" />
+
+- Avatar Picker <img width="535" height="573" alt="image" src="https://github.com/user-attachments/assets/78059891-b31d-4c84-8f9f-3e4edc54b4b3" />
 
 ---
 
-**Enjoy playing UNO! 🃏**
 
----
 
