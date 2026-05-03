@@ -323,7 +323,7 @@ while (firstCard != null && (firstCard.Type == CardType.Wild || firstCard.Type =
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/topas/UNO-Card-Game.git
+git clone https://github.com/topas/FINALPROJ_UNO.git
 ```
 
 2. Open `FINALPROJ_UNO.sln` in Visual Studio
