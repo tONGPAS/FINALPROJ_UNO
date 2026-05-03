@@ -38,7 +38,7 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 | Avatar Picker | Win Screen |
 |---------------|------------|
-| ![Avatar Picker](images/avatarpicker.png) | ![Win Screen](images/winscreenn.png) |
+| ![Avatar Picker](images/avatarpicker.png) | ![Win Screen](images/winscreen.png) |
 
 ---
 
