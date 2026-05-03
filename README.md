@@ -16,7 +16,7 @@
 
 This is a fully playable UNO card game for up to 3 players (Human and AI). Built with C# .NET Windows Forms, it features a complete UNO rule engine, 3 AI difficulty levels, database-driven player profiles, and full analytics including leaderboards, match history, and player statistics.
 
-**No Visual Studio Designer was used** — every UI element is hand-coded using GDI+.
+**No Visual Studio Designer was used**, every UI element is hand-coded using GDI+.
 
 ---
 
