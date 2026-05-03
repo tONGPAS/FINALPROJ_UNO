@@ -85,24 +85,26 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 ## 💻 Key Code Snippets
 
-### 1. Card.cs — IsPlayableOn() (UNO Rules Logic)
+### Full code can be found by going to FINALPROJ_UNO --> look at .cs files
+
+### 1. Card.cs --> IsPlayableOn() (UNO Rules Logic)
 
 ```csharp
-// Card.cs - Validates if a card can be played on the current top card
+//Card.cs - Validates if a card can be played on the current top card
 public bool IsPlayableOn(Card topCard, CardColor activeColor)
 {
-    // Wild cards are always playable
+    //Wild cards are always playable
     if (_type == CardType.Wild) return true;
     if (_type == CardType.WildDrawFour) return true;
     
-    // Same color as active color
+    //Same color as active color
     if (_color == activeColor) return true;
     
-    // Same number (for number cards)
+    //Same number (for number cards)
     if (_type == CardType.Number && topCard.Type == CardType.Number 
         && _value == topCard.Value) return true;
     
-    // Same action type (Skip on Skip, Reverse on Reverse, etc.)
+    //Same action type (Skip on Skip, Reverse on Reverse, etc.)
     if (_type != CardType.Number && _type == topCard.Type) return true;
     
     return false;
@@ -113,10 +115,10 @@ public bool IsPlayableOn(Card topCard, CardColor activeColor)
 
 ---
 
-### 2. AIPlayer.cs — ChooseCard() (AI Decision Making)
+### 2. AIPlayer.cs --> ChooseCard() (AI Decision Making)
 
 ```csharp
-// AIPlayer.cs - AI chooses a card based on difficulty level
+//AIPlayer.cs - AI chooses a card based on difficulty level
 public Card ChooseCard(Card topCard, CardColor activeColor)
 {
     List<Card> playable = GetPlayableCards(topCard, activeColor);
@@ -125,13 +127,13 @@ public Card ChooseCard(Card topCard, CardColor activeColor)
     switch (_difficulty)
     {
         case AIDifficulty.Easy:
-            return playable[0];  // Play first valid card
+            return playable[0]; // Play first valid card
             
         case AIDifficulty.Medium:
-            return ChooseMedium(playable, activeColor);  // Prefer action cards
+            return ChooseMedium(playable, activeColor); // Prefer action cards
             
         case AIDifficulty.Hard:
-            return ChooseHard(playable, activeColor);  // Strategic play
+            return ChooseHard(playable, activeColor); // Strategic play
             
         default:
             return playable[0];
@@ -143,10 +145,10 @@ public Card ChooseCard(Card topCard, CardColor activeColor)
 
 ---
 
-### 3. DatabaseManager.cs — SaveSession() (Database Operation)
+### 3. DatabaseManager.cs --> SaveSession() (Database Operation)
 
 ```csharp
-// DatabaseManager.cs - Saves a game session to the database
+//DatabaseManager.cs - Saves a game session to the database
 public int SaveSession(string gameMode, string winnerName, int totalRounds, DateTime startTime)
 {
     using (var conn = new SqlConnection(CONNECTION_STRING))
@@ -172,27 +174,27 @@ public int SaveSession(string gameMode, string winnerName, int totalRounds, Date
 
 ---
 
-### 4. FormGame.cs — DrawCard() (GDI+ Rendering)
+### 4. FormGame.cs --> DrawCard() (GDI+ Rendering)
 
 ```csharp
-// FormGame.cs - Draws a UNO card using GDI+ (no external images)
+//FormGame.cs - Draws a UNO card using GDI+ (no external images)
 private void DrawCard(Graphics g, int x, int y, int w, int h, 
                       Color color, string label, bool faceUp, Card card = null)
 {
-    // Draw shadow behind card
+    //Draw shadow behind card
     using (var sb = new SolidBrush(Color.FromArgb(48, 0, 0, 0)))
         g.FillPath(sb, RoundedPath(new Rectangle(x + 3, y + 4, w, h), 8));
     
-    // Draw card background (rounded rectangle)
+    //Draw card background (rounded rectangle)
     var path = RoundedPath(new Rectangle(x, y, w, h), 8);
     using (var b = new SolidBrush(color)) 
         g.FillPath(b, path);
     
-    // Draw inner oval highlight (glossy effect)
+    //Draw inner oval highlight (glossy effect)
     using (var b = new SolidBrush(Color.FromArgb(22, 255, 255, 255)))
         g.FillPath(b, RoundedPath(new Rectangle(x + 3, y + 3, w - 6, h - 6), 6));
     
-    // Draw gold border for playable cards
+    //Draw gold border for playable cards
     if (playable)
         using (var p = new Pen(GOLD, 3f)) 
             g.DrawPath(p, path);
@@ -203,10 +205,10 @@ private void DrawCard(Graphics g, int x, int y, int w, int h,
 
 ---
 
-### 5. GameEngine.cs — ProcessAITurn() (Game Flow)
+### 5. GameEngine.cs --> ProcessAITurn() (Game Flow)
 
 ```csharp
-// GameEngine.cs - Processes a complete AI turn
+//GameEngine.cs - Processes a complete AI turn
 public void ProcessAITurn()
 {
     if (CurrentPlayer.IsHuman) return;
@@ -216,42 +218,42 @@ public void ProcessAITurn()
     
     if (chosen == null)
     {
-        // No playable cards — draw one
+        //No playable cards — draw one
         Card drawn = DrawCard(ai);
         if (drawn != null && drawn.IsPlayableOn(TopDiscard, _activeColor))
             PlayCard(ai, drawn);  // Play the drawn card if possible
         else
-            AdvanceTurn();  // End turn
+            AdvanceTurn();  //End turn
     }
     else
     {
-        // Play the chosen card
+        //Play the chosen card
         PlayCard(ai, chosen);
         
-        // If Wild card was played, AI chooses the color
+        //If Wild card was played, AI chooses the color
         if (_state == GameState.ChoosingColor)
             SetActiveColor(ai.ChooseColor());
     }
 }
 ```
 
-**What it does:** Orchestrates the AI's turn — choosing cards, drawing when needed, and selecting colors for Wild cards.
+**What it does:** Orchestrates the AI's turn, choosing cards, drawing when needed, and selecting colors for Wild cards.
 
 ---
 
-### 6. AvatarDrawer.cs — Draw() Method (Custom Graphics)
+### 6. AvatarDrawer.cs --> Draw() Method (Custom Graphics)
 
 ```csharp
-// AvatarDrawer.cs - Draws all 16 avatars using GDI+
+//AvatarDrawer.cs - Draws all 16 avatars using GDI+
 public static void Draw(Graphics g, int avatarId, int x, int y, int size)
 {
     int idx = Math.Max(0, Math.Min(15, avatarId - 1));
     Color bg = AvatarColors[idx];
     
-    // Draw circular background
+    //Draw circular background
     DrawCircle(g, x, y, size, bg);
     
-    // Draw symbol based on avatar ID
+    //Draw symbol based on avatar ID
     switch (idx)
     {
         case 0: DrawSpade(g, x, y, size); break;   // ♠
@@ -274,18 +276,18 @@ public static void Draw(Graphics g, int avatarId, int x, int y, int size)
 }
 ```
 
-**What it does:** Draws 16 unique avatars using pure GDI+ — no image files needed.
+**What it does:** Draws 16 unique avatars using pure GDI, nmo image files needed.
 
 ---
 
-### 7. GameEngine.cs — StartGame() (Edge Case Handling)
+### 7. GameEngine.cs --> StartGame() (Edge Case Handling)
 
 ```csharp
-// GameEngine.cs - Ensures first card is never a Wild or Wild Draw Four
+//GameEngine.cs - Ensures first card is never a Wild or Wild Draw Four
 Card firstCard = _deck.TopDiscard;
 while (firstCard != null && (firstCard.Type == CardType.Wild || firstCard.Type == CardType.WildDrawFour))
 {
-    // Put Wild card back, reshuffle, draw a new first card
+    //Put Wild card back, reshuffle, draw a new first card
     _deck.Discard(firstCard);
     _deck.Shuffle();
     firstCard = _deck.Draw();
