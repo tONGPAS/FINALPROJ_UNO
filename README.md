@@ -15,7 +15,7 @@
 
 This is a fully playable UNO card game for up to 3 players (Human and AI). Built with C# .NET Windows Forms, it features a complete UNO rule engine, 3 AI difficulty levels, database-driven player profiles, and full analytics including leaderboards, match history, and player statistics.
 
-**No Visual Studio Designer was used** — every UI element is hand-coded using GDI+.
+**No Visual Studio Designer was used**, every UI element is hand-coded using GDI+.
 
 ---
 
@@ -31,7 +31,7 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 ### 🤖 AI System
 - **Easy**: Plays first valid card
 - **Medium**: Prefers action cards over number cards
-- **Hard**: Strategic — tracks opponent colors, saves Wild cards
+- **Hard**: Strategic, tracks opponent colors, saves Wild cards
 
 ### 🗄️ Database (SQL Server LocalDB)
 - 5 normalized tables (Players, GameSessions, SessionPlayers, Rounds, MoveLogs)
@@ -71,6 +71,30 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 | Microsoft.Data.SqlClient | Database connectivity |
 | LiveChartsCore | Analytics charts |
 | NAudio | Background music |
+
+🚀 Getting Started
+Prerequisites
+Windows 10/11
+
+Visual Studio 2022 (or newer)
+
+.NET 8 SDK
+
+Installation
+Clone the repository:
+
+bash
+git clone https://github.com/topas/UNO-Card-Game.git
+Open FINALPROJ_UNO.sln in Visual Studio
+
+Restore NuGet packages (Tools → NuGet Package Manager → Restore)
+
+Build the solution (Ctrl + Shift + B)
+
+Run the application (F5)
+
+First Time Setup
+The database will be created automatically when you first run the application. SQL Server LocalDB comes with Visual Studio — no additional setup required.
 
 ---
 
