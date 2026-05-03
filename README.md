@@ -85,9 +85,12 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 ---
 ## 🎮 Gameplay Demo
-  <video width="100%" controls autoplay loop>
-  <source src="https://www.youtube.com/watch?v=nwyXLuqi9QY" type="video/mp4">
-</video>
+
+[![UNO Gameplay Demo](https://img.youtube.com/vi/nwyXLuqi9QY/0.jpg)](https://www.youtube.com/watch?v=nwyXLuqi9QY)
+
+*Click the image to watch the full gameplay demo with sound*
+
+---
 
 ## 💻 Key Code Snippets
 
