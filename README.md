@@ -314,34 +314,6 @@ while (firstCard != null && (firstCard.Type == CardType.Wild || firstCard.Type =
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Windows 10/11
-- Visual Studio 2022 (or later)
-- .NET 8 SDK
-
-### Installation
-
-1. Clone the repository:
-```bash
-https://github.com/tONGPAS/FINALPROJ_UNO.git
-```
-
-2. Open `FINALPROJ_UNO.sln` in Visual Studio
-
-3. Restore NuGet packages (Tools → NuGet Package Manager → Restore)
-
-4. Build the solution (Ctrl + Shift + B)
-
-5. Run the application (F5)
-
-### First Time Setup
-
-The database will be created automatically when you first run the application. SQL Server LocalDB comes with Visual Studio — no additional setup required.
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -438,6 +410,3 @@ This project was created for educational purposes as a final project for CPE-262
 
 ---
 
-**Enjoy playing UNO! 🃏**
-
----
