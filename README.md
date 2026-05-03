@@ -26,19 +26,19 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 | Main Menu | Lobby Setup |
 |-----------|-------------|
-| ![Main Menu](mainmenu.png) | ![Lobby](lobby.png) |
+| ![Main Menu](images/mainmenu.png) | ![Lobby](images/lobby.png) |
 
 | Game Board | Leaderboard |
 |------------|-------------|
-| ![Game Board](gameboard.png) | ![Leaderboard](leaderboard.png) |
+| ![Game Board](images/gameboard.png) | ![Leaderboard](images/leaderboard.png) |
 
 | Player Profile | Match History |
 |----------------|---------------|
-| ![Player Profile](playerprofile.png) | ![Match History](matchhistory.png) |
+| ![Player Profile](images/playerprofile.png) | ![Match History](images/matchhistory.png) |
 
 | Avatar Picker | Win Screen |
 |---------------|------------|
-| ![Avatar Picker](avatarpicker.png) | ![Win Screen](winscreenn.png) |
+| ![Avatar Picker](images/avatarpicker.png) | ![Win Screen](images/winscreenn.png) |
 
 ---
 
