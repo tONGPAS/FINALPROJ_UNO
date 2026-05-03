@@ -42,6 +42,8 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 ---
 
+
+
 ## ✨ Features
 
 ### 🎮 Gameplay
@@ -82,6 +84,10 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 - Winner sound effects
 
 ---
+## 🎮 Gameplay Demo
+  <video width="100%" controls autoplay loop>
+  <source src="https://www.youtube.com/watch?v=nwyXLuqi9QY" type="video/mp4">
+</video>
 
 ## 💻 Key Code Snippets
 
