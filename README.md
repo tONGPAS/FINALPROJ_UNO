@@ -1,4 +1,3 @@
-Absolutely! Here's your updated **README.md** with all sections plus code snippets. Just copy-paste and add your screenshot filenames.
 
 ---
 
@@ -23,23 +22,23 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 
 ## 📸 Screenshots
 
-*(Replace `screenshot1.png` with your actual screenshot filenames)*
+
 
 | Main Menu | Lobby Setup |
 |-----------|-------------|
-| ![Main Menu](screenshot1.png) | ![Lobby](screenshot2.png) |
+| ![Main Menu](mainmenu.png) | ![Lobby](lobby.png) |
 
 | Game Board | Leaderboard |
 |------------|-------------|
-| ![Game Board](screenshot3.png) | ![Leaderboard](screenshot4.png) |
+| ![Game Board](gameboard.png) | ![Leaderboard](leaderboard.png) |
 
 | Player Profile | Match History |
 |----------------|---------------|
-| ![Player Profile](screenshot5.png) | ![Match History](screenshot6.png) |
+| ![Player Profile](playerprofile.png) | ![Match History](matchhistory.png) |
 
 | Avatar Picker | Win Screen |
 |---------------|------------|
-| ![Avatar Picker](screenshot7.png) | ![Win Screen](screenshot8.png) |
+| ![Avatar Picker](avatarpicker.png) | ![Win Screen](winscreenn.png) |
 
 ---
 
@@ -55,7 +54,7 @@ This is a fully playable UNO card game for up to 3 players (Human and AI). Built
 ### 🤖 AI System
 - **Easy**: Plays first valid card
 - **Medium**: Prefers action cards over number cards
-- **Hard**: Strategic — tracks opponent colors, saves Wild cards
+- **Hard**: Strategic, tracks opponent colors, saves Wild cards
 
 ### 🗄️ Database (SQL Server LocalDB)
 - 5 normalized tables (Players, GameSessions, SessionPlayers, Rounds, MoveLogs)
@@ -440,23 +439,3 @@ This project was created for educational purposes as a final project for CPE-262
 **Enjoy playing UNO! 🃏**
 
 ---
-
-## 📝 Instructions for Adding Your Screenshots:
-
-1. Save your screenshots as PNG files
-2. Name them like:
-   - `screenshot1.png` (Main Menu)
-   - `screenshot2.png` (Lobby)
-   - `screenshot3.png` (Game Board)
-   - `screenshot4.png` (Leaderboard)
-   - `screenshot5.png` (Player Profile)
-   - `screenshot6.png` (Match History)
-   - `screenshot7.png` (Avatar Picker)
-   - `screenshot8.png` (Win Screen)
-
-3. Put them in the same folder as your README.md
-4. Or upload them to a GitHub issue/image hosting and use the direct links
-
----
-
-Replace `yourusername` with your actual GitHub username, and update the screenshot filenames to match yours!
